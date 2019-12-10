@@ -1,10 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 import "./Main.scss";
 
 const Main = () => {
-  const div = useRef();
-
   useEffect(() => {
     setYPosition(document.querySelector(".main"));
     setComponentOpacity(document.querySelector(".div-1"));
@@ -43,12 +41,12 @@ const Main = () => {
   };
 
   return (
-    <>
-      <section className="main">
-        <div className="main__div div-1">Вашим ушам это по душе.</div>
-        <div className="main__div div-2">Просто волшебно. Как никогда.</div>
-      </section>
-    </>
+    <main className="main">
+      {/* <div className="main__div div-1">Вашим ушам это по душе.</div>
+      <div className="main__div div-2">Просто волшебно. Как никогда.</div> */}
+      <div className="main__div div-1">Ваш</div>
+      <div className="main__div div-2">Про</div>
+    </main>
   );
 };
 

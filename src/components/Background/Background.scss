@@ -1,5 +1,5 @@
 .background {
-  height: 4000px;
+  height: 3000px;
 }
 
 .background__figure {
@@ -27,8 +27,12 @@
 }
 
 .background__picture-number {
-  margin-top: 95vh;
-  height: 5%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 2rem;
   text-align: center;
   font-size: 1.5rem;
+  background: #fff;
+  z-index: 2;
 }

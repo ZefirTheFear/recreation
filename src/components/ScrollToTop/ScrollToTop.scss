@@ -1,0 +1,31 @@
+@import "../../variables";
+
+.scroll-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 3px;
+  background: $primary-color;
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    background: $secondary-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+
+  &::before {
+    content: "\f062";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.3rem;
+  }
+}

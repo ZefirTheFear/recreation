@@ -1,0 +1,28 @@
+@import "../../variables";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 3rem;
+  width: 100%;
+  text-transform: uppercase;
+  background: rgba($color: $primary-color, $alpha: 0.7);
+  color: $secondary-color;
+  z-index: 1;
+  border-bottom: 1px solid $secondary-color;
+}
+
+.navbar__menu-item {
+  margin: 0 1rem;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: color 0.2s ease-out;
+
+  &:hover {
+    color: darken($secondary-color, 15);
+    border-top: 1px solid darken($secondary-color, 35);
+    border-bottom: 1px solid darken($secondary-color, 35);
+  }
+}
