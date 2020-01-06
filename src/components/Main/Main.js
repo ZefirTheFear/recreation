@@ -4,18 +4,18 @@ import "./Main.scss";
 
 const Main = () => {
   useEffect(() => {
-    setYPosition(document.querySelector(".main"));
-    setComponentOpacity(document.querySelector(".div-1"));
-    setComponentOpacity(document.querySelector(".div-2"));
-    window.addEventListener("scroll", () => setYPosition(document.querySelector(".main")));
-    window.addEventListener("scroll", () => setComponentOpacity(document.querySelector(".div-1")));
-    window.addEventListener("scroll", () => setComponentOpacity(document.querySelector(".div-2")));
+    // setYPosition(document.querySelector(".main"));
+    // setComponentOpacity(document.querySelector(".div-1"));
+    // setComponentOpacity(document.querySelector(".div-2"));
+    // window.addEventListener("scroll", () => setYPosition(document.querySelector(".main")));
+    // window.addEventListener("scroll", () => setComponentOpacity(document.querySelector(".div-1")));
+    // window.addEventListener("scroll", () => setComponentOpacity(document.querySelector(".div-2")));
   }, []);
 
   const setYPosition = elem => {
     const rate = Math.round(window.pageYOffset * -0.18);
-    elem.style.transform = `translate(-50%, ${rate}px)`;
-    // elem.style.transform = `matrix(1,0,0,1,0, ${rate})`;
+    // elem.style.transform = `translate(-50%, ${rate}px)`;
+    elem.style.transform = `translate(0, ${rate}px)`;
   };
 
   const setComponentOpacity = elem => {
@@ -42,10 +42,10 @@ const Main = () => {
 
   return (
     <main className="main">
-      {/* <div className="main__div div-1">Вашим ушам это по душе.</div>
-      <div className="main__div div-2">Просто волшебно. Как никогда.</div> */}
-      <div className="main__div div-1">Ваш</div>
-      <div className="main__div div-2">Про</div>
+      {/* <section className="main__view">
+        <div className="main__view-title">канев</div>
+        <div className="main__view-desc">живописное место на днепре</div>
+      </section> */}
     </main>
   );
 };

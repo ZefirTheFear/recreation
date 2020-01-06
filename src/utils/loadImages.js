@@ -7,7 +7,7 @@ export default (componentName, frameAmount) => {
     image.classList.add(`${componentName}__img`);
     image.classList.add(`${componentName}__img_${formatNumber(index)}`);
     image.src = `/assets/images/${componentName}/${formatNumber(index)}.jpg`;
-    image.style.display = "none";
-    figure.prepend(image);
+    image.style.opacity = "0";
+    figure.append(image);
   }
 };

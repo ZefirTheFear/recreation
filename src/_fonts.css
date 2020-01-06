@@ -1,3 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext");
 
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/assets/fonts/SF-Pro-Display/v2/sf-pro-display_regular.woff2");
+}
+
+@font-face {
+  font-family: "SF Pro Display Bold";
+  src: url("/assets/fonts/SF-Pro-Display/v2/sf-pro-display_bold.woff2");
+}
+
+@font-face {
+  font-family: "SF Pro Display Semibold";
+  src: url("/assets/fonts/SF-Pro-Display/v2/sf-pro-display_semibold.woff2");
+}

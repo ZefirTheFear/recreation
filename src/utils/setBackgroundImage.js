@@ -16,10 +16,12 @@ export default (componentName, frameAmount, minPageYOffset, maxPageYOffset, isLa
     picNum = formatNumber(frameAmount);
   }
 
+  document.querySelector(`.${componentName}__img_${picNum}`).style.opacity = "1";
   document
     .querySelectorAll(`.${componentName}__img`)
-    .forEach(item => (item.style.display = "none"));
-  document.querySelector(`.${componentName}__img_${picNum}`).style.display = "";
+    .forEach(item =>
+      item.classList.contains(`${componentName}__img_${picNum}`) ? null : (item.style.opacity = "0")
+    );
 
   const div = document.querySelector(".background__picture-number");
   div.innerHTML = `${componentName}__img_${picNum}`;
